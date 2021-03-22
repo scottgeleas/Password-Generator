@@ -13,46 +13,33 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // -------------------------------------------------------------------------------------------------------------------
-  function randomPassword(length) {
-    var special = [
-    " ",
-    "!",
-    "”",
-    "#",
-    "$",
-    "%",
-    "&",
-    "’",
-    "(",
-    ")",
-    "*",
-    "+",
-    ",",
-    "-",
-    ".",
-    "/",
-    ":",
-    ";",
-    "<",
-    "=",
-    ">",
-    "?",
-    "@",
-    "[",
-    "\",
-    "]",
-    "^",
-    "_",
-    "`",
-    "{",
-    "|",
-    "}",
-    "~",
-  ];
-    var pass = passwords[Math.floor(Math.random() * special.length)];
-    return pass;
-  };
-
-function generate() {
-  myform.password.value = randomPassword(myform.length.value);
+const randomFunc = {
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol,
 }
+
+
+
+function getRandomLower() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+}
+
+function getRandomUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+}
+
+function getRandomSymbol() {
+  const symbols = "!'@#$%^&*(){}[]=<>+-_`~/,.|";
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
+
+
+
+console.log(getRandomSymbol());
