@@ -2,5 +2,11 @@
     "cSpell.words": [
         "bootcamp",
         "geleas"
+    ],
+    "cSpell.ignoreWords": [
+        "generatedscreenshot",
+        "lengthscreenshot",
+        "selectionscreenshot",
+        "set"
     ]
 }
