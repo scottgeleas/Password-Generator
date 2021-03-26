@@ -23,9 +23,7 @@ These step are shown in the various screenshots below:
 ![Generated Password](Assets/images/generatedscreenshot.PNG)
 
  ## Getting Started:
-```
 The page is live at https://scottgeleas.github.io/Password-Generator/.
-```
 
  ## Prerequisites:
 If you want to edit this web page you must have a Github account,    
