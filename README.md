@@ -29,7 +29,8 @@ The page is live at https://scottgeleas.github.io/Password-Generator/.
 
  ## Prerequisites:
 ```
-If you want to edit this web page you must have a Github account, and have also downloaded Visual Studio Code.
+If you want to edit this web page you must have a Github account,    
+and have also downloaded Visual Studio Code.
 
 - Create a Github account here: [Github](https://github.com/)
 - Download Visual Studio here: [Visual Studio](https://code.visualstudio.com/download/)
