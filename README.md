@@ -3,7 +3,8 @@
  ## Description 
 This is a password generator designed to let you customize how your password is generated.
 You can customize the length, select from lower case letters, upper case letters, numbers, and symbols.
-After you have entered a desired length, and chosen which characters to include in your password, javascript automatically randomizes through your characters selections making you a custom password with all of your requirements. These step are shown in the various screenshots below:
+After you have entered a desired length, and chosen which characters to include in your password, javascript automatically randomizes through your characters selections making you a custom password with all of your requirements.    
+These step are shown in the various screenshots below:
 
 
  ### Starting page ⤵️
