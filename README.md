@@ -20,7 +20,7 @@ These step are shown in the various screenshots below:
 
 
 ### Password Generated and shown to page ⤵️
-![Generated Password](Assets\images\generatedscreenshot.PNG)
+![Generated Password](Assets/images/generatedscreenshot.PNG)
 
  ## Getting Started:
 ```
