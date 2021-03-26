@@ -8,22 +8,22 @@ This is a password generator designed to let you customize how your password is 
 ```
 Starting page ⤵️
 ```
-![Website](./assets/images/screenshot1.png)
+![Website](assets/images/screenshot1.png)
 
 ```
 Length Input ⤵️
 ```
-![Length Input](./assets/images/lengthscreenshot.png)
+![Length Input](assets/images/lengthscreenshot.PNG)
 
 ```
 Selecting a set ⤵️
 ```
-![Set Selection](./assets/images/setSelectionscreenshot.png)
+![Set Selection](assets/images/setSelectionscreenshot.PNG)
 
 ```
 Password Generated and shown to page ⤵️
 ```
-![Generated Password](./assets/images/generatedscreenshot.png)
+![Generated Password](assets\images\generatedscreenshot.PNG)
 
  ## Getting Started:
 ```
