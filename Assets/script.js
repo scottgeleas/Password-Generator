@@ -1,15 +1,19 @@
-// this links the button from html to javascript so when you click generate password javascript starts 
 var generateBtn = document.querySelector("#generate");
+// clicking generate password on the page will run this function
 function generatePassword() {
-  let length = prompt("Enter the length of your desired password between 8 - 128 characters");
+  let length = parseInt(prompt("Enter the length of your desired password between 8 - 128 characters"));
+
+  if (isNaN(length)) {
+    alert("You must enter a numerical length.");
+    return generatePassword();
+  }
 
   // length must be between 8 and 128 characters or an alert pops up and run generatePassword again
   if (length < 8 || length > 128) {
-    alert("Length must be between 8 and 128")
-    generatePassword()
-    return
+    alert("Length must be between 8 and 128");
+    return generatePassword();
   }
-  
+
   // these confirms let you choose what characters sets to you in your password
   let lower = confirm("Do you want to include lower case letters?");
   let upper = confirm("Do you want to include upper case letters?");
@@ -18,18 +22,17 @@ function generatePassword() {
 
   // If you dont choose one set It will display a messages and run the generatePassword function again
   if (lower === false && upper === false && number === false && symbol === false) {
-    alert("You must choose at least one set.")
-    generatePassword()
-    return
+    alert("You must choose at least one set.");
+    return generatePassword();
   }
 
   let myPassword = "";
 
   // these constants hold arrays of characters by type 
-  const lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", ];
-  const upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", ];
+  const lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",];
+  const upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",];
   const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  const symbols = ["!", ",", "$", "%", "&", "'", "\"" , "\\" , "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~", ];
+  const symbols = ["!", ",", "$", "%", "&", "'", "\"", "\\", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "_", "`", "{", "|", "}", "~",];
 
   // selectedSet hold all character selections made by the user
   let selectedSet = [];
@@ -68,4 +71,3 @@ function writePassword() {
 
 // adds event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
